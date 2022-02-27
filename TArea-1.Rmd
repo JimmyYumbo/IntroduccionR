@@ -1,0 +1,34 @@
+---
+title: "Tarea 1"
+author: "Jimmy Yumbo"
+date: '2022-02-26'
+output: html_document
+---
+**Crear un indetificador de nombre "ciudad" y asigne como valor el nombre de alguna ciudad** 
+
+ciudad = "Ibarra" 
+
+**Crear un identificador de nombre "pais_andes" y asigne como valor los nombres de los países por donde cruza la cordillera de Los Andes**
+
+pais_andes = as.factor (c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador", "Perú", "Venezuela"))
+
+**Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, logico)**
+
+SIDA = data.frame("Provincias" = c("Azuay", "Bolivar", "Cañar","Carchi", "Chimborazo", "Cotopaxi","Esmeraldas", "Guayas", "Loja", "Napo", "Pastaza", "Orellana"),
+                  "Femenino" = c("21","4", "15", "5", "7", "8", "123", "414", "9", "6", "8", "15"), 
+                  "Masculino" = c("98", "8", "25", "17", "48", "33", "172", "900", "39", "7", "21", "15"),
+                  "Total" = c("119", "12", "40", "22", "55", "41", "295", "1314", "48", "13", "29","30"),
+                  "Porcentaje" = c("2.75", "0.28", "0.93", "0.51", "1.27", "0.95", "6.83", "30.42", "1.11", "0.3", "0.67", "0.69"))
+SIDA
+
+**Cargue el dataset "DNase" e identifique su estructura.** 
+data()
+DNase
+head(DNase,12)
+str(DNase)
+data = DNase, subset = Run == 1
+# Extraiga (subset)los datos que cumplan con las condiciones de: 
+#   1. "conc" (concentracion) entre 0.1 y 0.2
+#   2. "Run" diferente a 2, "conc" mayor a 0.2 y "density" menor o igual a 1.0
+subset(x = DNase, subset = conc [0.1:0.2]) 
+
